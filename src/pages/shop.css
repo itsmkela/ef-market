@@ -1,0 +1,231 @@
+.shop-page {
+  padding: 40px 20px;
+  background: #0f0f1a;
+  min-height: 100vh;
+  color: #e0e0e0;
+}
+
+.shop-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.shop-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.shop-header p {
+  font-size: 1.2rem;
+  color: #a0a0c0;
+}
+
+/* Filters */
+.filters-container {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 14px 20px;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 50px;
+  border: none;
+  background: #1a1a2e;
+  color: white;
+  font-size: 1rem;
+}
+
+.filter-options {
+  display: flex;
+  gap: 15px;
+}
+
+.filter-options select {
+  padding: 12px 20px;
+  border-radius: 50px;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Accounts Grid */
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.account-card {
+  background: #1a1a2e;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid #00ff9d22;
+}
+
+.account-card:hover {
+  transform: translateY(-10px);
+  border-color: #00ff9d;
+}
+
+.card-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #ff4757;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.account-icon {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.account-card h3 {
+  font-size: 1.35rem;
+  margin: 10px 0 15px;
+  line-height: 1.3;
+}
+
+.account-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 0.95rem;
+  color: #a0a0c0;
+}
+
+.price {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #00ff9d;
+  margin: 18px 0 22px 0;
+  text-align: center;
+}
+
+/* Buttons Container - View Details on top, Buy Now below */
+.account-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn-details {
+  background: transparent;
+  color: #00ff9d;
+  border: 2px solid #00ff9d;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 1.05rem;
+}
+
+.btn-details:hover {
+  background: rgba(0, 255, 157, 0.12);
+  transform: translateY(-2px);
+}
+
+.btn-buy {
+  background: #00ff9d;
+  color: #0f0f1a;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 1.05rem;
+}
+
+.btn-buy:hover {
+  background: #00e68a;
+  transform: scale(1.03);
+}
+
+.no-results {
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 1.3rem;
+  color: #888;
+  padding: 40px 20px;
+}
+/* Sell Banner */
+.sell-banner {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  background: linear-gradient(135deg, #1f1f35, #16213e);
+  border-radius: 20px;
+  padding: 30px 40px;
+  border: 1px solid #00ff9d33;
+}
+
+.sell-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sell-text h2 {
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.sell-text p {
+  color: #a0a0c0;
+  margin: 0;
+  max-width: 500px;
+}
+
+.btn-sell {
+  background: #ff4757;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s;
+  font-size: 1.1rem;
+}
+
+.btn-sell:hover {
+  background: #ff3742;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 71, 87, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sell-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .sell-text h2 {
+    font-size: 1.6rem;
+  }
+}

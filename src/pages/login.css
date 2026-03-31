@@ -1,0 +1,135 @@
+/* login.css - FORCE DARK THEME */
+
+.auth-page {
+  min-height: 100vh !important;
+  background: #0f0f1a !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.auth-card {
+  background: #1a1a2e !important;
+  border-radius: 20px;
+  padding: 45px 40px !important;
+  border: 1px solid #00ff9d22 !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Header */
+.auth-header h1 {
+  color: #ffffff !important;
+  font-size: 2.5rem;
+}
+
+.auth-header p {
+  color: #a0a0c0 !important;
+}
+
+/* Input Fields - Strong Fix */
+.form-group input,
+.form-group select {
+  width: 100% !important;
+  padding: 15px 18px !important;
+  background: #0f0f1a !important;
+  border: 1px solid #00ff9d33 !important;
+  border-radius: 12px !important;
+  color: white !important;
+  font-size: 1.05rem !important;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #00ff9d !important;
+  box-shadow: 0 0 0 3px rgba(0, 255, 157, 0.2) !important;
+}
+
+/* Password Toggle */
+.password-input {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #777;
+  cursor: pointer;
+}
+
+.toggle-password:hover {
+  color: #00ff9d;
+}
+
+/* Buttons */
+.btn-full {
+  width: 100% !important;
+  padding: 16px !important;
+  background: #00ff9d !important;
+  color: #0f0f1a !important;
+  border: none !important;
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  font-size: 1.15rem !important;
+}
+
+.btn-full:hover {
+  background: #00e68a !important;
+}
+
+/* Back to Home */
+.back-home-btn {
+  display: block;
+  width: 50;
+  margin-left: -12px !important;
+  margin-top: 25px !important;
+  padding: 14px 20px !important;
+  color: #00ff9d !important;
+  background: transparent !important;
+  border: 2px solid #00ff9d33 !important;
+  border-radius: 50px !important;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-home-btn:hover {
+  background: rgba(0, 255, 157, 0.1) !important;
+  border-color: #00ff9d !important;
+  color: white !important;
+}
+
+/* Other elements */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 25px 0;
+  color: #a0a0c0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.forgot-link {
+  color: #00ff9d;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}

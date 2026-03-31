@@ -1,0 +1,227 @@
+.sell-page {
+  padding: 60px 20px;
+  background: #0f0f1a;
+  min-height: 100vh;
+  color: #e0e0e0;
+}
+
+.sell-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.sell-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.sell-header p {
+  font-size: 1.25rem;
+  color: #a0a0c0;
+}
+
+.sell-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sell-form {
+  background: #1a1a2e;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #00ff9d22;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: #0f0f1a;
+  border: 1px solid #00ff9d33;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  cursor: pointer;
+  border-color: #00ff9d;
+  box-shadow: 0 0 0 3px rgba(0, 255, 157, 0.1);
+}
+
+.form-note {
+  background: #16213e;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #a0a0c0;
+  margin: 20px 0;
+}
+
+.btn-full {
+  cursor: pointer;  
+  width: 100%;
+  padding: 16px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.success-container {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-card {
+  text-align: center;
+  background: #1a1a2e;
+  padding: 50px 40px;
+  border-radius: 20px;
+  max-width: 500px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sell-form {
+    padding: 30px 20px;
+  }
+}
+/* Enhanced Drag & D905rop Upload */
+.image-upload-area {
+  width:100% ;
+  border: 2px dashed #00ff9d44;
+  border-radius: 16px;
+  padding: 50px 20px;
+  text-align: center;
+  background: #0f0f1a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-upload-area:hover,
+.image-upload-area.dragging {
+  border-color: #00ff9d;
+  background: #16213e;
+  transform: scale(1.01);
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-placeholder {
+  color: #a0a0c0;
+}
+
+.upload-icon {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.upload-placeholder p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.click-text {
+  color: #00ff9d;
+  font-weight: 600;
+}
+
+.image-preview-container {
+  position: relative;
+  width: 100%;
+  max-height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image-preview-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff4757;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-image-btn:hover {
+  background: #ff3742;
+}
+
+.back-home-btn {
+  display: block;
+  width: 94% !important;
+  margin-left: 2px !important;
+  margin-top: 25px !important;
+  padding: 14px 20px !important;
+  color: #00ff9d !important;
+  background: transparent !important;
+  border: 2px solid #00ff9d33 !important;
+  border-radius: 50px !important;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-home-btn:hover {
+  background: rgba(0, 255, 157, 0.1) !important;
+  border-color: #00ff9d !important;
+  color: white !important;
+}
